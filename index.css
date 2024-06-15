@@ -1,0 +1,25 @@
+
+  .message {
+    padding: 8px;
+    margin: 4px;
+    border-radius: 5px;
+    max-width: 70%;
+    text-align: center;
+  }
+
+  .message.left {
+    background-color: #f0f0f0;
+    text-align: left;
+  }
+
+  .message.right {
+    background-color: #3498db;
+    color: white;
+    text-align: right;
+  }
+
+  .sender {
+    font-weight: bold;
+  }
+
+ 
