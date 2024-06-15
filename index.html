@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="index.css">
+    <title>Login Page</title>
+</head>
+<body>
+    <center>
+        <div id="login-prompt">
+            <h1 style="color:red">Login Page</h1>
+            <fieldset style="width:200px; height:300px; background-color:white">
+                <input type="text" name="txtuser" id="txtuser" placeholder="Name" required/><br><br>
+                <input type="text" name="group-id" id="group-id" placeholder="Group ID" required/><br><br>
+                <input style="color:red" type="submit" value="Submit" onclick="createUser()">
+            </fieldset>
+        </div>
+        <div id="chat-window" style="display:none">
+            <p>Hello...<span id="your-username">pending</span></p>
+            <p>Group ID: <span id="current-group-id">pending</span></p>
+            <a href="#" id="logout" onclick="logout()">Logout</a>
+            <div id="chatconsole" border:1px solid #ccc;>
+                <div id="messages" style="border: 1px solid #ccc; padding:4px; margin:4px; min-height: 100px;"></div>
+                <input type="text" name="message" id="message" placeholder="Enter message" required/><br><br>
+                <input style="color:red" type="submit" value="Send" id="sendmessage" onclick="sendMessage()">
+            </div>
+        </div>
+    </center>
+    <script type="text/javascript" src="https://unpkg.com/@cometchat/chat-sdk-javascript@latest/CometChat.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>
